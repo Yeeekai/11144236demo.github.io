@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @property --percentage{
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  @keyframes pieAni {
+    from {
+      --percentage: 0;
+    }
+  }
+  
+  .pie {
+    /*大小*/
+    width: 220px; 
+    /* 寬高比 1:1 */
+    aspect-ratio: 1;
+  
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+  }
+
+  .pie::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+    -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
+    mask-image: radial-gradient(farthest-side,#0000 calc(80% - 10px),#000 calc(80% - 10px));
+  }
+
+  .pie.ani{
+    animation-name: pieAni;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+  }

@@ -52,7 +52,7 @@ article {
 
 .card {
     /*background-image: url("picture/bg.jpg");*/
-    background-color:  gray;
+    background-color:  Silver;
     background-size: cover;
     padding: 30px;
     margin: 20px auto;
@@ -74,7 +74,8 @@ h2{
 .bdtext{
     float: right;  /* 文字在右邊 */
     width: 430px;
-    text-align: center;
+   padding-right: 10px;
+   height: 100%;
   }
 /*@media screen and (max-width: 800px) {
 
