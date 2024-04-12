@@ -3,16 +3,17 @@
 }
 
 body {
-    background-image: url("bg1.jpg");
+    /*background-image: url("picture/bg1.jpg");*/
+    background-color: lightblue;
     margin: 0px;
 }
 
 header {
-    background-image: url("bg1.jpg");
+    /*background-image: url("picture/bg1.jpg");*/
     color: white;
     text-align: center;
     margin: 0px;
-    padding: 20px;
+    padding: 20px 230px;
 }
 
 
@@ -50,16 +51,32 @@ article {
 }
 
 .card {
-    background-image: url("bg.jpg");
+    /*background-image: url("picture/bg.jpg");*/
+    background-color:  gray;
     background-size: cover;
-    padding: 20px;
+    padding: 30px;
     margin: 20px auto;
     border-radius: 15px;
     color: white;
+    
 }
 
+.aboutme{
+    font-size: 30px;
+    line-height: 230%;
+    padding-left: 20px;
+}
+h2{
+    font-size: 50px;
+    padding-left: 20px;
+}
 
-@media screen and (max-width: 800px) {
+.bdtext{
+    float: right;  /* 文字在右邊 */
+    width: 430px;
+    text-align: center;
+  }
+/*@media screen and (max-width: 800px) {
 
     article,
     aside {
