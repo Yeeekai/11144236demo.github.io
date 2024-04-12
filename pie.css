@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
   @property --percentage{
     syntax: "<number>";
     inherits: true;
@@ -22,7 +22,7 @@
   
     display: inline-grid;
     place-content: center;
-    margin: 5px;
+    margin: 15px;
     font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;
