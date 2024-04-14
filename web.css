@@ -4,16 +4,20 @@
 
 body {
     /*background-image: url("picture/bg1.jpg");*/
-    background-color: Gray;
+    background-color: #bcb8b1;
     margin: 0px;
 }
 
 header {
-    /*background-image: url("picture/bg1.jpg");*/
-    color: white;
-    text-align: center;
-    margin: 0px;
-    padding: 20px 230px;
+    background-image: url("picture/me2.jpg");
+    background-size: cover;
+    /*color: white;
+    text-align: center;*/
+    margin: 0 auto;
+    padding: 50px 200px;
+    font-size: large;
+    box-shadow: 5px 5px 8px 0 #000;
+    background-color:rgb(255, 255, 255,0.1);
 }
 
 
@@ -31,13 +35,14 @@ footer {
 }
 
 main {
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 article {
+    /*width: 73%;*/
+    margin: 20px 20px;
+    padding: 20px 20px;
 
-    width: 73%;
-    margin: 20px auto;
 }
 .aside{
     float: left;
@@ -52,33 +57,49 @@ article {
 
 .card {
     /*background-image: url("picture/bg.jpg");*/
-    background-color:  Silver;
-    background-size: cover;
-    padding: 30px;
-    margin: 20px auto;
     border-radius: 15px;
-    color: white;
-    
+    color:rgb(0, 0, 0);
+    text-align: right;
+    font-size: 50px;
+    margin-left: 700px;
+    padding: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-family: Serif;
 }
 
 .aboutme{
     font-size: 30px;
     line-height: 230%;
     padding: 20px;
-    font-family: 標楷體;
+    font-family: Serif;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-align: right;
+    padding-left: 500px;
+    margin: 200px;
+    border-radius: 15px;
+    color: white;
+    font-family: Serif;
 }
 h2{
-    font-size: 50px;
+    font-size: 60px;
     padding-left: 20px ;
     margin: 0;
-    font-family: 標楷體;
+    font-family: Serif;
 }
 
 .bdtext{
     float: right;  /* 文字在右邊 */
-    width: 430px;
-   padding-right: 10px;
-   height: 100%;
+    width: 600px;
+    margin: 10px;
+    padding: 20px 20px;
+    height: 100%;
+    background-color: white;
+    border-radius: 3%;
+    font-family: Serif;
 }
 
 .pi{
@@ -87,6 +108,37 @@ h2{
     margin: 20px ;
     display: block;
     float: right;
+}
+.bg{
+    background-size: cover;
+    margin: 10px auto;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px 0 #000;
+    background-color: rgba(255,255,255, 0.75);
+    font-family: Serif;
+}
+.text1{
+    float: right;  
+    width: 750px;
+   padding-right: 350px;
+   height: 100%;
+}
+.text2{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+.ui{
+    margin: 0px;
+    padding: 50px 50px;
+    
+}
+.p1{
+    font-size: 40px;
+    font-family: serif;
+    padding-left: 30px;
 }
 /*@media screen and (max-width: 800px) {
 
@@ -106,3 +158,8 @@ h2{
         height: 90%;
     }
 }
+<img src="picture/me.png"  width="300px" height="300px"style="border-radius: 50%;" >
+*/
+
+
+

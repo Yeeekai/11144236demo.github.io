@@ -1,6 +1,7 @@
 /* reset */
 body, h1, ul, li {
     margin: 0;
+    
   }
   
   * {
@@ -23,11 +24,12 @@ body, h1, ul, li {
   /* 漢堡按鈕 */
   label {
     float: right;
-    padding-right: 100px;
+    padding-right: 10px;
     line-height: 100px;
     cursor: pointer;
     img {
-      width: 30px;   
+      width: 50px;
+      height: 50px;   
       vertical-align: middle;
     }
   }
@@ -35,20 +37,23 @@ body, h1, ul, li {
   /* menu*/
   .menu {
     position: relative;
-    opacity:0.75;
+    opacity:1;
     clear: both;
-   
+  
     li {
-      text-align: center;
-      border-bottom: 1px solid #efefef;
+      text-align: right;
+      border-bottom: 1px solid white;
+      padding-left: 700px;
       a {
+        display: inline-block;
         display: block;
-        line-height: 50px;
-        font-size: 18px;
-        color: white;
+        line-height: 70px;
+        font-size: 30px;
+        color: black;
         &:hover {
-          background: #5d5d5d;
+          background: gray;
           color:white;
+          border-radius: 10%;
         }
       }
     }
@@ -58,11 +63,11 @@ body, h1, ul, li {
   .menu {
     max-height: 0;
     overflow: hidden;
-    transition: .2s; /* 動畫秒數 */
+    transition: .4s; /* 動畫秒數 */
   }
   
   input:checked ~ .menu {
-    max-height: 200px;
+    max-height: 500px;
   }
   /* mediaquery */
   /*@media screen and (min-width: 768px) {

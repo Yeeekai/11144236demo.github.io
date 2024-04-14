@@ -16,7 +16,7 @@
   
   .pie {
     /*大小*/
-    width: 220px; 
+    width: 190px; 
     /* 寬高比 1:1 */
     aspect-ratio: 1;
   
@@ -35,7 +35,7 @@
     position: absolute;
     border-radius: 50%;
     inset: 0;
-    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #eee;
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%),#0000 0%), #ffffff;
     -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
     mask-image: radial-gradient(farthest-side,#0000 calc(80% - 10px),#000 calc(80% - 10px));
   }
