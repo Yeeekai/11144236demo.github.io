@@ -6,6 +6,7 @@ body {
     /*background-image: url("picture/bg1.jpg");*/
     background-color: #bcb8b1;
     margin: 0px;
+    position: relative;
 }
 
 header {
@@ -18,41 +19,45 @@ header {
     font-size: large;
     box-shadow: 5px 5px 8px 0 #000;
     background-color:rgb(255, 255, 255,0.1);
+    position: relative;
 }
-
 
 
 nav a:hover {
-    background-color: #accbe1;
+    background-color: rgba(255, 255, 255, 0.75);
     color: white;
+    position: relative;
 }
 
 footer {
-    background-color: #accbe1;
+    background-color: rgba(255, 255, 255, 0.75);
     color: #444444;
     text-align: center;
     padding: 10px;
+    position: relative;
 }
 
 main {
     padding: 20px 50px;
+    position: relative;
 }
 
 article {
     /*width: 73%;*/
     margin: 20px 20px;
     padding: 20px 20px;
-
+    position: relative;
 }
 .aside{
     float: left;
     width: 25%;
     text-align: center;
-
+    position: relative;
 }
 
 .clearfix {
     clear: both;
+    position: relative;
 }
 
 .card {
@@ -65,49 +70,73 @@ article {
     padding: auto;
     background-color: rgba(255, 255, 255, 0.75);
     font-family: Serif;
+    position: relative;
 }
 
 .aboutme{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 230%;
     padding: 20px;
     font-family: Serif;
+    position: relative;
 }
 h1{
     margin: 0;
     padding: 0;
-    font-size: 50px;
+    font-size: 60px;
     text-align: right;
-    padding-left: 500px;
+    padding-left: 400px;
     margin: 200px;
     border-radius: 15px;
     color: white;
     font-family: Serif;
+    position: relative;
 }
 h2{
     font-size: 60px;
     padding-left: 20px ;
     margin: 0;
     font-family: Serif;
+    position: relative;
+    transition: all 0.2s .2s; 
 }
-
+h2:hover {
+    font-size: 70px; /* 鼠标悬停时的字体大小 */
+    transform: scale(1.2);
+}
+h2:hover::after{
+    width:50%;
+  }
+h2::after{
+    content:" ";
+    display:block; 
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    transition: .3s .2s;
+  }
 .bdtext{
     float: right;  /* 文字在右邊 */
     width: 600px;
     margin: 10px;
     padding: 20px 20px;
     height: 100%;
-    background-color: white;
-    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0.75);
     font-family: Serif;
+    transition: all 0.2s ease-in-out;
+    position: relative;
 }
-
+.bdtext:hover {
+    font-size: 70px; /* 鼠标悬停时的字体大小 */
+    transform: scale(1.2);
+}
 .pi{
     width: 100px;
     height: 100px;
     margin: 20px ;
     display: block;
     float: right;
+    position: relative;
 }
 .bg{
     background-size: cover;
@@ -117,28 +146,33 @@ h2{
     box-shadow: 5px 5px 8px 0 #000;
     background-color: rgba(255,255,255, 0.75);
     font-family: Serif;
+    position: relative;
 }
 .text1{
     float: right;  
-    width: 750px;
-   padding-right: 350px;
+    width: 700px;
+   padding-right: 300px;
    height: 100%;
+   position: relative;
 }
 .text2{
     font-size: 30px;
+    position: relative;
 }
 p{
     font-size: 20px;
+    position: relative;
 }
 .ui{
     margin: 0px;
     padding: 50px 50px;
-    
+    position: relative;
 }
 .p1{
     font-size: 40px;
     font-family: serif;
     padding-left: 30px;
+    position: relative;
 }
 /*@media screen and (max-width: 800px) {
 

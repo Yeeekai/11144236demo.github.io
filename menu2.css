@@ -42,20 +42,26 @@ body, h1, ul, li {
   
     li {
       text-align: right;
-      border-bottom: 1px solid white;
-      padding-left: 700px;
+      /*border-bottom: 1px solid white;*/
+      padding-left: 500px;
+      
       a {
         display: inline-block;
         display: block;
         line-height: 70px;
         font-size: 30px;
+        padding-right: 10px;
         color: black;
+        font-family: Serif;
+        transition: all 0.3s ease-in-out; 
         &:hover {
-          background: gray;
+          background: #bcb8b1;
           color:white;
-          border-radius: 10%;
+          font-size: 55px; /* 鼠标悬停时的字体大小 */
+          transform:scale(0.95);/* 使用transform属性放大文字，注意transform属性的默认值为1 */
         }
       }
+
     }
   }
   

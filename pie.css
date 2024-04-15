@@ -22,11 +22,12 @@
   
     display: inline-grid;
     place-content: center;
-    margin: 15px;
+    margin: 40px;
     font-size: 25px;
     font-weight: bold;
     font-family: sans-serif;
     position: relative;
+    transition: all 0.2s ease-in-out;
   }
 
   .pie::before{
@@ -39,7 +40,10 @@
     -webkit-mask-image: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 calc(100% - 10px));
     mask-image: radial-gradient(farthest-side,#0000 calc(80% - 10px),#000 calc(80% - 10px));
   }
-
+  .pie:hover {
+    font-size: 30px; /* 鼠标悬停时的字体大小 */
+    transform: scale(1.2);
+}
   .pie.ani{
     animation-name: pieAni;
     animation-duration: 5s;
