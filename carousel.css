@@ -5,7 +5,6 @@ ol,
   list-style: none;
   margin: 0px;
   padding: 0px;
- 
 }
 
 /* 動畫關鍵影格 */
@@ -48,27 +47,23 @@ ol,
 }
 
 .pictures-wrap {
-  width: 500px;
-  height: 300px;
+  width: 900px;
+  height: 400px;
   margin: 0 auto;
   border: 5px solid black;
   overflow: hidden;
-  margin: 10px ;
+  margin: 0px ;
   border-radius: 15px;
-  padding: 0px;
-  
 }
 
 .tk {
   width: 500%;
   display: flex;
   animation: move 10s infinite;
-  
+  object-fit:cover;
 }
 
 .img2 {
-  width: 800px;
+  width: 900px;
   height: 500px;
-  padding: 0px;
-  position: relative;
 	}

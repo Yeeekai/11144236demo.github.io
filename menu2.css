@@ -41,9 +41,9 @@ body, h1, ul, li {
     clear: both;
   
     li {
-      text-align: right;
+      text-align: center;
       /*border-bottom: 1px solid white;*/
-      padding-left: 500px;
+      
       
       a {
         display: inline-block;
@@ -51,14 +51,16 @@ body, h1, ul, li {
         line-height: 70px;
         font-size: 30px;
         padding-right: 10px;
-        color: black;
+        color: white;
         font-family: Serif;
         transition: all 0.3s ease-in-out; 
+    
         &:hover {
           background: #bcb8b1;
+          border-radius: 20px;
           color:white;
-          font-size: 55px; /* 鼠标悬停时的字体大小 */
-          transform:scale(0.95);/* 使用transform属性放大文字，注意transform属性的默认值为1 */
+          font-size: 60px; /* 鼠标悬停时的字体大小 */
+          transform:scale(1);/* 使用transform属性放大文字，注意transform属性的默认值为1 */
         }
       }
 
@@ -70,6 +72,8 @@ body, h1, ul, li {
     max-height: 0;
     overflow: hidden;
     transition: .4s; /* 動畫秒數 */
+    background-color: rgba(116, 112, 112,0.5);
+    border-radius: 15px;
   }
   
   input:checked ~ .menu {
