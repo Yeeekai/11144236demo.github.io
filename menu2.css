@@ -1,4 +1,4 @@
-/* reset */
+
 body, h1, ul, li {
     margin: 0;
     
@@ -21,7 +21,6 @@ body, h1, ul, li {
     display: none;
   }
   
-  /* 漢堡按鈕 */
   label {
     float: right;
     padding-right: 10px;
@@ -34,7 +33,7 @@ body, h1, ul, li {
     }
   }
   
-  /* menu*/
+
   .menu {
     position: relative;
     opacity:1;
@@ -42,7 +41,7 @@ body, h1, ul, li {
   
     li {
       text-align: center;
-      /*border-bottom: 1px solid white;*/
+     
       
       
       a {
@@ -59,8 +58,8 @@ body, h1, ul, li {
           background: #bcb8b1;
           border-radius: 20px;
           color:white;
-          font-size: 60px; /* 鼠标悬停时的字体大小 */
-          transform:scale(1);/* 使用transform属性放大文字，注意transform属性的默认值为1 */
+          font-size: 60px; 
+          transform:scale(1);
         }
       }
 
@@ -71,7 +70,7 @@ body, h1, ul, li {
   .menu {
     max-height: 0;
     overflow: hidden;
-    transition: .4s; /* 動畫秒數 */
+    transition: .4s; 
     background-color: rgba(116, 112, 112,0.5);
     border-radius: 15px;
   }
@@ -79,21 +78,4 @@ body, h1, ul, li {
   input:checked ~ .menu {
     max-height: 500px;
   }
-  /* mediaquery */
-  /*@media screen and (min-width: 768px) {
-    label {
-      display: none;
-    }
-    .menu {
-      float: right;
-      clear: none;
-      max-height: 50px;
-      background: #eee;
-      li {
-        display: inline-block;
-        a {
-          padding: 0 15px;  
-        }
-      }
-    }
-  }*/
+ 

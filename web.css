@@ -2,9 +2,10 @@
     box-sizing: border-box;
     position: relative;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
-    /*background-image: url("picture/bg1.jpg");*/
     background-color: #bcb8b1;
     margin: 0px;
 }
@@ -12,13 +13,12 @@ body {
 header {
     background-image: url("picture/me2.jpg");
     background-size: cover;
-    /*color: white;
-    text-align: center;*/
     margin: 0 auto;
     padding: 50px 200px;
     font-size: large;
     box-shadow: 5px 5px 8px 0 #000;
     background-color:rgb(255, 255, 255,0.1);
+
 }
 
 
@@ -37,12 +37,13 @@ footer {
 
 main {
     padding: 20px 50px;
+    position: relative;
 }
 
 article {
-    /*width: 73%;*/
-    margin: 20px 20px;
-    padding: 20px 20px;
+
+    margin: 20px 40px;
+    padding: 50px 50px;
 }
 .aside{
     float: left;
@@ -55,7 +56,6 @@ article {
 }
 
 .card {
-    /*background-image: url("picture/bg.jpg");*/
     border-radius: 15px;
     color:rgb(0, 0, 0);
     text-align: right;
@@ -71,6 +71,14 @@ article {
     line-height: 230%;
     padding: 20px;
     font-family: Serif;
+    display:inline-block;
+}
+.aboutme2{
+    font-size: 40px;
+    line-height: 230%;
+    padding-left: 200px;
+    font-family: Serif;
+    display:inline-block;
 }
 h1{
     margin: 0;
@@ -92,7 +100,7 @@ h2{
     transition: all 0.2s .2s; 
 }
 h2:hover {
-    font-size: 70px; /* 鼠标悬停时的字体大小 */
+    font-size: 70px; 
     transform: scale(1.2);
 }
 h2:hover::after{
@@ -104,10 +112,13 @@ h2::after{
     width: 0%;
     height: 4px;
     background-color: black;
-    transition: .3s .2s;
+    transition: .3s .1s;
   }
+a,a:link,a:visited{
+    color:#000
+}
 .bdtext{
-    float: right;  /* 文字在右邊 */
+    float: right;  
     width: 600px;
     margin: 50px;
     padding: 20px 20px;
@@ -118,16 +129,18 @@ h2::after{
     border-radius: 10px;
 }
 .bdtext:hover {
-    font-size: 70px; /* 鼠标悬停时的字体大小 */
+    font-size: 70px; 
     transform: scale(1.2);
     background-color: rgba(186, 182, 182, 0.75);
 }
 .pi{
     width: 100px;
     height: 100px;
-    margin: 20px ;
-    display: block;
-    float: right;
+    margin: 40px ;
+}
+.pi:hover{
+    font-size: 70px; 
+    transform: scale(1.5);
 }
 .bg{
     background-size: cover;
@@ -139,8 +152,7 @@ h2::after{
     font-family: Serif;
 }
 .text1{
-    float: right;  
-    width: 700px;
+    width: 1200px;
    padding-right: 300px;
    height: 100%;
    font-family: Serif;
@@ -162,7 +174,13 @@ p{
     font-family: serif;
     padding-left: 30px;
 }
-/*@media screen and (max-width: 800px) {
+.pcgame{
+    font-size: 50px;
+    font-family: serif;
+    padding-left: 450px;
+    
+}
+@media screen and (max-width: 800px) {
 
     article,
     aside {
@@ -180,8 +198,7 @@ p{
         height: 90%;
     }
 }
-<img src="picture/me.png"  width="300px" height="300px"style="border-radius: 50%;" >
-*/
+
 
 
 

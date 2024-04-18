@@ -6,7 +6,7 @@ ol,
   padding: 0px;
 }
 
-/* 動畫關鍵影格 */
+
 @keyframes move {
   0%,
   20% {
@@ -25,7 +25,7 @@ ol,
     transform: translateX(-2700px);
   }
 }
-/* 支援webkit核心的瀏覽器用 */
+
 @-webkit-keyframes move {
   0%,
   20% {

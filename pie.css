@@ -15,11 +15,9 @@
   }
   
   .pie {
-    /*大小*/
     width: 190px; 
-    /* 寬高比 1:1 */
     aspect-ratio: 1;
-  
+
     display: inline-grid;
     place-content: center;
     margin: 40px;
@@ -41,7 +39,7 @@
     mask-image: radial-gradient(farthest-side,#0000 calc(80% - 10px),#000 calc(80% - 10px));
   }
   .pie:hover {
-    font-size: 30px; /* 鼠标悬停时的字体大小 */
+    font-size: 30px; 
     transform: scale(1.2);
 }
   .pie.ani{
