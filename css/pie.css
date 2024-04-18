@@ -13,7 +13,7 @@
       --percentage: 0;
     }
   }
-  
+  /*圓餅圖*/
   .pie {
     width: 190px; 
     aspect-ratio: 1;

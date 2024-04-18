@@ -6,7 +6,7 @@ ol,
   padding: 0px;
 }
 
-
+/*輪播動畫*/
 @keyframes move {
   0%,
   20% {
